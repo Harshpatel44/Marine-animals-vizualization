@@ -16,7 +16,7 @@
 <p> MATCH (m:Marine),(f:feed_habits)
     WHERE m.feed_habits=f.feed_habits CREATE (m)-[r:Identical_Feeding_Habits_]->(f) RETURN r
 </p>
-<img src="third_command.png">
+<img src="snapshots/third_command.png">
 
 <h3>4. Show the animals which are endangered</h3>
 <p> There are 2 commands that does this thing. <br>
@@ -27,4 +27,4 @@
     2.
     MATCH (m:Marine),(n:feed_habits) WHERE m.ConservationStatus contains 'Endangered'  and m.Feeding_Habits = n.Feeding_Habits RETURN m,n
 </p>
-<img src="fourth_command.png">
+<img src="snapshots/fourth_command.png">
